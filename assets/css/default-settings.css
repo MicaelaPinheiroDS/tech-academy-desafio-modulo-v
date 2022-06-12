@@ -1,0 +1,25 @@
+:root{
+    --primitive-color:rgb(0, 125, 235);
+    --hover-color:rgba(255, 255, 255, 0.15);
+    --secondary-title-color: rgb(131, 131, 131);
+    --paragraph-color: rgb(187,185,185);
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+    list-style: none;
+    text-decoration: none;
+}
+html, 
+body{
+    height: 100vh;
+    font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+
+}
