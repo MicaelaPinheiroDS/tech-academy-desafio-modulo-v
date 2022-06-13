@@ -58,14 +58,14 @@ h3{
 form{
     margin-top: 2rem;
 }
-form input{
+form input, textarea{
     width: 37.5rem;
     height: 4.5rem;
     padding-left: 1.5rem;
     margin-bottom: 1.3rem;
     font-size: 1.8rem;
     border-radius: 2rem;
-    border: 2px solid var(--primitive-color);
+    background: #4b7de13b;
 
 }
 form [type="submit"]{
@@ -80,7 +80,7 @@ form [type="submit"]{
 form [type="submit"]:hover{
     cursor: pointer;
     background: var(--hover-primitive-color);
-    transform: translateY(-2px);
+    transition: .5s;
 }
 main .container-main img{
     width: 60rem;
@@ -109,7 +109,7 @@ main .container-main img{
     transition: all 0.3s ease 0s;
 }
 .card:hover{
-    transform:translateY(-7px);
+    transform:translateY(-5px);
 }
 .image{
     width: 100%;
@@ -132,14 +132,75 @@ main .container-main img{
 .title{
     margin-bottom: 0;
 }
-.desafio {
-    font-size: 10rem;
+#contact{
+    position: relative;
+}
+.content-contact{
     display: flex;
     justify-content: center;
+    gap: 2.4rem;
+    margin-block: 15rem;
+    
+}
+.content-contact::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 15rem);
+    z-index: -1;
+    background-image: linear-gradient(transparent, var(--hover-primitive-color));
+    transform: translateY(-30rem);
+}
+.info-contact h4{
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.form-contact, .info-contact{
+    width: 37.5rem;
+    box-sizing: content-box;
+    padding: 4rem;
+    border-radius: 3rem;
+    background: white;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 15%);
+}
+.info-contact h2,.info-contact h1, 
+.form-contact h1{
+    font-size: 4.5rem;
+    color: var(--primitive-color);
+    line-height: 100%;
+    margin-top: 2rem;
+}
+.info-contact h2{
+    font-size: 3.5rem;
+}
+.info-contact > div{
+    margin-block: 3rem;
+}
+.info-contact a[href^="mailto"]{
+    font-size: 2.4rem;
+    text-decoration: underline;
+    color: var(--primitive-color);
+}
+.social-meida ul{
+    display: flex;
+    gap: 1.5rem;
+}
+.form-contact, 
+.form-contact form{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 40rem;
-    border: 1px solid black;
-    margin: 10rem auto;
-    max-width: 98rem;
-    background: lightgrey;
+}
+.form-contact textarea{
+    height: 15rem;
+    padding: .5rem .75rem;
+}
+:is(.form-contact input,
+    .form-contact  textarea)::placeholder{
+    text-indent: 3rem;
+}   
+.form-contact input[type="submit"]{
+    width: 100%;
 }
