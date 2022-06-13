@@ -180,8 +180,9 @@ main .container-main img{
 }
 .info-contact a[href^="mailto"]{
     font-size: 2.4rem;
-    text-decoration: underline;
+    font-weight: bold;
     color: var(--primitive-color);
+    border-bottom: 0.2rem solid var(--primitive-color);
 }
 .social-meida ul{
     display: flex;
