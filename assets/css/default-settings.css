@@ -31,6 +31,13 @@ body{
     font-size: 1.6rem;
 
 }
+.container{
+    max-width: 98rem;
+    margin-inline: auto;
+}
+.content{
+    margin: 2rem;
+}
 textarea{
     font-family: "Source Sans Pro", 'Times New Roman', Times, serif !important;
 }
