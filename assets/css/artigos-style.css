@@ -1,0 +1,75 @@
+@import url('./default-settings.css');
+section{
+    width: 98rem;
+    transform: translateY(-10px);
+}
+button{
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem 0 3rem 0;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.8rem;
+    background-color: var(--primitive-color);
+    border: .1rem solid var(--primitive-color);
+    cursor: pointer;
+}
+button:hover{
+    background: var(--hover-primitive-color);
+}
+img{
+    width: 85%;
+    margin: 0 7%;
+    border-radius: 5rem;
+    box-shadow: 2px 2px 5px -4px black;
+    transition: all .6s ease 0s;
+    object-fit: contain;
+}
+img:hover{
+    transform:translateY(-7px)
+}
+.publication{
+    font-size: 1.4rem;
+    color: var(--date-article-color);
+}
+h1{
+    margin: 4rem 0 2.5rem;  
+    font-size: 3rem;
+}
+h4{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+p{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+}
+p:last-child{
+    padding-bottom: 10rem;
+}
+h2{
+    margin: 4rem 0 2.5rem;
+    font-size: 3rem;
+}
+content-video{
+    display: flex;
+    justify-content: center;
+}
+@media (max-with:1000px){
+    section{
+        padding: 0 2rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+    img{
+        min-height: 30rem;
+        object-fit: cover;
+    }
+}
