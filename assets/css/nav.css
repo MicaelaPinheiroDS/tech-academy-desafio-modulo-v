@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 header{
     background: var(--primitive-color);
     position: fixed;
