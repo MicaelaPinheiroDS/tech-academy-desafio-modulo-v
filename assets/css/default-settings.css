@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    border: none;
 }
 a{
     text-decoration: none;
@@ -19,6 +20,9 @@ a{
 li{
     list-style: none;
 }
+textarea {
+    resize: none;
+ }
 html, 
 body{
     font-family: "Source Sans Pro", 'Times New Roman', Times, serif;
@@ -26,4 +30,7 @@ body{
     -webkit-font-smoothing: antialiased;
     font-size: 1.6rem;
 
+}
+textarea{
+    font-family: "Source Sans Pro", 'Times New Roman', Times, serif !important;
 }
