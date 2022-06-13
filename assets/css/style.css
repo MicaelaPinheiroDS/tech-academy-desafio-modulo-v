@@ -71,12 +71,19 @@ form input{
 form [type="submit"]{
     background: var(--primitive-color);
     color: white;
+    width: 15rem;
+    height: 4rem;
+    padding-left: 0;
+    font-size: 1.6rem;
+
 }
 form [type="submit"]:hover{
     cursor: pointer;
+    background: var(--hover-primitive-color);
+    transform: translateY(-2px);
 }
 main .container-main img{
-    width: 600px;
+    width: 60rem;
 }
 /*------------------------------------------------------------------settings cards------------------------------------------------------------------------------------------------*/
 .cards{
@@ -98,7 +105,7 @@ main .container-main img{
     flex-direction: column;
     cursor: pointer;
     box-shadow: 2px 2px 5px -4px black;
-    border-radius: .3rem;
+    border-radius: 1rem;
     transition: all 0.3s ease 0s;
 }
 .card:hover{
@@ -109,6 +116,8 @@ main .container-main img{
     padding-top: 56.25%;
     overflow: hidden;
     position: relative;
+    border-radius: 1rem 1rem 0 0;   
+    height: 22.5rem;
 }
 .image img{
     position: absolute;
