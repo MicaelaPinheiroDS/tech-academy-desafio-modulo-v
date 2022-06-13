@@ -2,8 +2,9 @@
     --primitive-color:rgb(0, 125, 235);
     --hover-primitive-color:rgba(0,125,235, .75);
     --hover-color:rgba(255, 255, 255, 0.15);
-    --secondary-title-color: rgb(131, 131, 131);
-    --paragraph-color: rgb(187,185,185);
+    --secondary-title-color: rgb(130, 130, 130);
+    --paragraph-color: rgb(187, 185, 185);
+    --date-article-color:rgb(105, 106, 106);
     font-size: 62.5%;
 }
 *{
