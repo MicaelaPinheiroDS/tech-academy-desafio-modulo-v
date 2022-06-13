@@ -15,6 +15,10 @@
     input{
         margin-block: 1.2rem;
     }
+    .content-contact{
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 630px){
