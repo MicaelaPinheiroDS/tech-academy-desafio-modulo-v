@@ -85,23 +85,18 @@ h4{
 h2{
     margin: 4rem 0 2.5rem;
     font-size: 3.5rem;
+    color: var(--secondary-title-color);
 }
-.content-video,
-h2{
-    text-align: center;
+.content-media img,
+.content-media iframe{
+    width: 100%;
 }
 @media (max-with:1000px){
     section{
         padding: 0 2rem;
     }
-    h1{
+    h1, h2{
         font-size: 2.5rem;
-    }
-    h2{
-        font-size: 2.5rem;
-    }
-    p{
-        font-size: 1.6rem;
     }
     img{
         min-height: 30rem;
