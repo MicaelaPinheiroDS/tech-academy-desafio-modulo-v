@@ -100,4 +100,8 @@
         transform: translateX(-100vw);
         transition: .5s ease transform;
     }
+    footer > div{
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
