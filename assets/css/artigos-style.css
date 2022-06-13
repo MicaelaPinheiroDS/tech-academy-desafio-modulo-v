@@ -1,59 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('./default-settings.css');
+@import url('./nav.css');
+@import url('./responsive.css');
+/*---------------------------------------------------------------settings (footer)------------------------------------------------------------------------------------------------*/
+@import url('./footer.css');
 section{
-    width: 98rem;
-    transform: translateY(-10px);
+    position: relative;
+}
+article{
+    margin-bottom: 10rem;
+}
+article p{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    line-height: 150%;
+    letter-spacing: 0.05rem;
+    text-indent:1.5em;
+    text-align: justify;
+}
+article p:last-child{
+    padding-bottom: 10rem;
+}
+.container-button{
+    position: absolute;
+    z-index: 100;
 }
 button{
-    width: 10rem;
-    height: 3rem;
-    margin: 2rem 0 3rem 0;
-    border-radius: 1rem;
+    background: transparent;
     color: white;
-    font-size: 1.8rem;
-    background-color: var(--primitive-color);
-    border: .1rem solid var(--primitive-color);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 2rem 2.5rem;
+}
+button svg{
+    width: 3.6rem;
     cursor: pointer;
 }
-button:hover{
-    background: var(--hover-primitive-color);
+button svg:hover circle{
+    fill: var(--hover-primitive-color);
+    transition: .5s;
 }
-img{
-    width: 85%;
-    margin: 0 7%;
-    border-radius: 5rem;
-    box-shadow: 2px 2px 5px -4px black;
-    transition: all .6s ease 0s;
-    object-fit: contain;
+.container-img > div{
+    position: relative;
 }
-img:hover{
-    transform:translateY(-7px)
+.container-img img{
+    width: 100%;
+    height: 45rem;
+    object-fit: cover;
+    border-radius: 0 0 3rem 3rem;
+}
+.container-img::after{
+    content: "";
+    width: 100%;
+    height: 45rem;
+    background: linear-gradient(180deg, rgba(0,0,0,.45) 0%, transparent 100%);
+    position:absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
 }
 .publication{
     font-size: 1.4rem;
     color: var(--date-article-color);
+    margin: 1rem 3rem 0;
+}
+h1::first-letter{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 6rem;
+    padding-right: 1rem;
 }
 h1{
-    margin: 4rem 0 2.5rem;  
-    font-size: 3rem;
+    margin: 3rem 0;  
+    font-size: 4.5rem;
 }
 h4{
     margin: 1.5rem 0;
     font-size: 1.5rem;
-}
-p{
-    margin-top: 3rem;
-    font-size: 1.8rem;
-}
-p:last-child{
-    padding-bottom: 10rem;
+    text-align: center;
 }
 h2{
     margin: 4rem 0 2.5rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
-content-video{
-    display: flex;
-    justify-content: center;
+.content-video,
+h2{
+    text-align: center;
 }
 @media (max-with:1000px){
     section{
