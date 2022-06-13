@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('./default-settings.css');
 @import url('./nav.css');
-@import url('./responsive.css');
 /*---------------------------------------------------------------settings (footer)------------------------------------------------------------------------------------------------*/
 @import url('./footer.css');
 section{
@@ -42,9 +41,6 @@ button svg{
 button svg:hover circle{
     fill: var(--hover-primitive-color);
     transition: .5s;
-}
-.container-img > div{
-    position: relative;
 }
 .container-img img{
     width: 100%;
