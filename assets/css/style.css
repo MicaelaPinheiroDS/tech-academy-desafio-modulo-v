@@ -191,7 +191,6 @@ main .container-main img{
 .form-contact form{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .form-contact textarea{
     height: 15rem;
