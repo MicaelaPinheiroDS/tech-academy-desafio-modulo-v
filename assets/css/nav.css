@@ -1,0 +1,30 @@
+header{
+    background: var(--primitive-color);
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    padding: 2.4rem;
+    transition: all 250ms linear 0s;
+}
+header nav ul a:hover{
+    background: var(--hover-color)
+}
+header .container img {
+    width: 21rem;
+    height: 3rem;
+}
+#checkbox-menu{
+    display: none;
+}
