@@ -87,19 +87,20 @@ h2{
     font-size: 3.5rem;
     color: var(--secondary-title-color);
 }
-.content-media img,
-.content-media iframe{
-    width: 100%;
+.content-media {
+    display: flex;
+    justify-content: center;
 }
-@media (max-with:1000px){
+
+@media (max-width: 1000px){
     section{
         padding: 0 2rem;
     }
     h1, h2{
         font-size: 2.5rem;
     }
-    img{
-        min-height: 30rem;
-        object-fit: cover;
+    .content-media iframe,
+    .content-media img{
+        width: 100%;
     }
 }
