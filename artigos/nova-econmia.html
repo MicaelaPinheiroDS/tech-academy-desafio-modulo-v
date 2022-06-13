@@ -11,14 +11,45 @@
 </head>
 
 <body>
-    <section>
-        <div>
+    <header>
+        <div class="container">
+          <img src="../assets/images/logo.svg" alt="logo" />
+          <div class="menu-section">
+            <div class="container-menu">
+              <input type="checkbox" id="checkbox-menu" />
+              <label class="menu-button-container" for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <nav>
+                <ul class="menu">
+                  <li><a href="../#home">Home</a></li>
+                  <li><a href="../#article">Artigos</a></li>
+                  <li><a href="../#contact">Contato</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    <section class="container">
+        <div class="container-button">
             <a href="../index.html">
-                <button>Voltar</button>
+                <button>
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="24" r="24" transform="rotate(-90 24 24)" fill="#007DEB"/>
+                        <path d="M32.4 24H15.6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M24 32.4L15.6 24L24 15.6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                     <span>Voltar</span></button>
             </a>
         </div>
-        <img src="../assets/images/robo_unsplash_3aaf280873.webp " alt="">
-        <p class="publication">Publicado em: 9 jun 2022 - 11:00</p>
+        <div class="container-img">
+            <img  class="container" src="../assets/images/robo_unsplash_3aaf280873.webp " alt="">
+        </div>
+        <article>
+            <p class="publication">Publicado em: 9 jun 2022 - 11:00</p>
         <h1>Qual o futuro das profissões na Nova Econmonia?</h1>
         <h4>Profissões estão morrendo e novas estão nascendo. Pessoas estão se demitindo de seus empregos e gerando
             novos. As relações de trabalho estão se modificando e se automatizando. Qual o futuro do trabalho na Nova
@@ -62,7 +93,31 @@
             é revalidada de acordo com as transformações da tecnologia. Os robôs não vão competir com os humanos
             em vagas de empregos, pois novas vagas dependentes da inteligência humana serão criadas.
         </p>
+        </article>
     </section>
+    <footer>
+        <div class="container">
+          <div>
+            <img src="../assets/images/logo.svg" alt="logo startse">
+            <p>©2022 - SartSe.</p>
+            <p>Todos os direitos reservados.</p>
+          </div>
+          <div class="social-meida">
+            <ul>
+              <li><a href="https://www.facebook.com/startseoficial/" target="_blank"><img
+                    src="../assets/images/social-media-icon/facebook.svg" alt="icon facebook"></a></li>
+              <li><a href="https://www.linkedin.com/school/startse/" target="_blank"><img
+                    src="../assets/images/social-media-icon/linkedin.svg" alt="icon linkedin"></a></li>
+              <li><a href="https://twitter.com/startseoficial" target="_blank"><img
+                    src="../assets/images/social-media-icon/twitter.svg" alt="icon twitter"></a></li>
+              <li><a href="https://www.youtube.com/startseoficial/" target="_blank"><img
+                    src="../assets/images/social-media-icon/youtube.svg" alt="icon youtube"></a></li>
+              <li><a href="https://www.instagram.com/startseoficial/" target="_blank"><img
+                    src="../assets/images/social-media-icon/instagram.svg" alt="icon instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
 </body>
 
 </html>
