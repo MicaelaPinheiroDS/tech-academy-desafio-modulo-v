@@ -2,7 +2,7 @@
     --primitive-color:rgb(0, 125, 235);
     --hover-primitive-color:rgba(0,125,235, .75);
     --hover-color:rgba(255, 255, 255, 0.15);
-    --secondary-title-color: rgb(130, 130, 130);
+    --secondary-title-color: rgb(88, 88, 88);
     --paragraph-color: rgb(187, 185, 185);
     --date-article-color:rgb(105, 106, 106);
     font-size: 62.5%;
@@ -37,6 +37,10 @@ body{
 }
 .content{
     margin: 2rem;
+}
+.social-meida ul{
+    display: flex;
+    gap: 1.5rem;
 }
 textarea{
     font-family: "Source Sans Pro", 'Times New Roman', Times, serif !important;
