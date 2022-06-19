@@ -101,6 +101,13 @@
         transform: translateX(-100vw);
         transition: .5s ease transform;
     }
+    .form-contact form input, textarea{
+        max-width: 100%;
+    }
+    .form-contact, .info-contact{
+        max-width: 37.5rem;
+        box-sizing: border-box;
+    }
     footer > div{
         flex-direction: column;
         gap: 3rem;
